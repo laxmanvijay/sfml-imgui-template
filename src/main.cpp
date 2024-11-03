@@ -1,4 +1,4 @@
-#include <SFML/Graphics.hpp>
+#include "draw.hpp"
 
 int main()
 {
@@ -20,14 +20,7 @@ int main()
         // clear the window with black color
         window.clear(sf::Color::Cyan);
 
-        // draw everything here...
-        // window.draw(...);
-        sf::CircleShape shape(50.f);
-
-        // set the shape color to green
-        shape.setFillColor(sf::Color::Green);
-
-        window.draw(shape);
+        Draw::draw(window, Draw::e_shapes::circle);
 
         // end the current frame
         window.display();
