@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "fmt",
+    "sfml",
+    "hello-imgui",
+    "glad",
+    "nlohmann-json"
+  ]
+}
